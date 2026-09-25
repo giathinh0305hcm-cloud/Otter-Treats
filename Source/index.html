@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otter Treats | Socola Handmade Thủ Công</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🦦</div>
+        Otter <span>Treats</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Trang chủ</a>
+        <a href="about.html">Về chúng tôi</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="services.html">Dịch vụ</a>
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Tỉ mỉ như cách Rái cá chọn đá,<br>Ngọt ngào như cách chúng nắm tay nhau</h1>
+      <p>Craft Chocolate & Sweets handmade 100% – Mỗi viên socola mang theo câu chuyện và niềm vui.</p>
+      <a href="products.html" class="btn">Khám phá ngay</a>
+      <a href="about.html" class="btn btn-outline">Câu chuyện Ollie</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Vì sao chọn Otter Treats?</h2>
+        <p>Chúng tôi làm socola bằng cả trái tim, từ hạt cacao đến từng viên hoàn thiện.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>100% Handmade</h3>
+          <p>Mỗi sản phẩm được làm thủ công tỉ mỉ với nguyên liệu tự nhiên, không chất bảo quản.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Bean-to-Bar</h3>
+          <p>Từ hạt cacao chọn lọc đến thanh socola – quy trình kiểm soát toàn bộ chất lượng.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-gift"></i></div>
+          <h3>Cá nhân hóa</h3>
+          <p>Set quà tặng kèm thông điệp riêng, bao bì đẹp mắt – hoàn hảo cho mọi dịp đặc biệt.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-otter"></i></div>
+          <h3>Câu chuyện đáng yêu</h3>
+          <p>Mascot Ollie và triết lý “chăm chút từng chi tiết” tạo kết nối cảm xúc thật sự.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="about-preview">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="images/otter.jpg" alt="Ollie - Mascot Otter Treats">
+        </div>
+        <div class="about-text">
+          <h2>Gặp Ollie – Chú rái cá đam mê socola</h2>
+          <p>Ollie là một chú rái cá nhỏ sống bên bờ sông, luôn mơ ước tự tay làm ra loại socola ngon nhất thế giới. Dù bị chế giễu, cậu không bỏ cuộc.</p>
+          <p>Nhờ sự kiên trì và bà Maple tốt bụng, Ollie đã tạo ra những viên truffle thơm ngon với nhân mật ong và muối biển. Hương vị ấy nhanh chóng lan tỏa khắp ngôi làng…</p>
+          <a href="about.html" class="btn">Đọc câu chuyện đầy đủ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS TEASER -->
+  <section class="features" style="background: var(--light);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Sản phẩm nổi bật</h2>
+        <p>Từ bean-to-bar đến bonbon nghệ thuật – tất cả đều làm bằng tay.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card" onclick="location.href='products.html'">
+          <div class="product-img">
+            <img src="images/chocolate-bars.jpg" alt="Bean-to-Bar Chocolate">
+          </div>
+          <div class="product-info">
+            <h3>Bean-to-Bar Classic</h3>
+            <p>Socola nguyên chất từ hạt cacao chọn lọc.</p>
+            <div class="price">Từ 89.000đ</div>
+          </div>
+        </div>
+        <div class="product-card" onclick="location.href='products.html'">
+          <div class="product-img">
+            <img src="images/truffles.jpg" alt="Chocolate Truffles">
+          </div>
+          <div class="product-info">
+            <h3>Truffle Collection</h3>
+            <p>Bonbon trang trí nghệ thuật, nhân đa dạng.</p>
+            <div class="price">Từ 129.000đ</div>
+          </div>
+        </div>
+        <div class="product-card" onclick="location.href='products.html'">
+          <div class="product-img">
+            <img src="images/gift-box.jpg" alt="Gift Set">
+          </div>
+          <div class="product-info">
+            <h3>Gift Set Cá nhân hóa</h3>
+            <p>Set quà kèm thông điệp riêng, bao bì đẹp.</p>
+            <div class="price">Từ 199.000đ</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="products.html" class="btn">Xem tất cả sản phẩm</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Otter Treats</h4>
+          <p>Craft Chocolate & Sweets handmade. Tỉ mỉ như cách rái cá chọn đá, ngọt ngào như cách chúng nắm tay nhau.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Liên kết</h4>
+          <a href="index.html">Trang chủ</a><br>
+          <a href="about.html">Về chúng tôi</a><br>
+          <a href="products.html">Sản phẩm</a><br>
+          <a href="services.html">Dịch vụ</a>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <a href="contact.html">Liên hệ</a><br>
+          <a href="#">Chính sách giao hàng</a><br>
+          <a href="#">Đổi trả</a>
+        </div>
+        <div>
+          <h4>Liên hệ</h4>
+          <p>📍 TP. Hồ Chí Minh<br>
+          📧 hello@ottertreats.vn<br>
+          📞 0901 234 567</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Otter Treats. All rights reserved. | Assignment FPT Polytechnic
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

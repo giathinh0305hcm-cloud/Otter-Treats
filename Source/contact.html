@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ | Otter Treats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🦦</div>
+        Otter <span>Treats</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Về chúng tôi</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="services.html">Dịch vụ</a>
+        <a href="contact.html" class="active">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Liên hệ với chúng tôi</h1>
+      <p>Hãy để Ollie và đội ngũ Otter Treats lắng nghe bạn</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info">
+          <h3>Thông tin liên hệ</h3>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Địa chỉ</strong><br>
+              123 Nguyễn Huệ, Quận 1<br>
+              TP. Hồ Chí Minh, Việt Nam
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong><br>
+              hello@ottertreats.vn<br>
+              order@ottertreats.vn
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Điện thoại</strong><br>
+              0901 234 567<br>
+              (8:00 – 20:00 hàng ngày)
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <div>
+              <strong>Mạng xã hội</strong><br>
+              @ottertreats.vn<br>
+              TikTok: @ottertreats
+            </div>
+          </div>
+
+          <h3 style="margin-top:30px;">Giờ làm việc</h3>
+          <table style="box-shadow:none;font-size:0.95rem;">
+            <tr>
+              <td>Thứ 2 – Thứ 6</td>
+              <td>8:00 – 20:00</td>
+            </tr>
+            <tr>
+              <td>Thứ 7</td>
+              <td>9:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td>Chủ nhật</td>
+              <td>10:00 – 16:00</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form">
+          <h3 style="color:var(--primary);margin-bottom:20px;">Gửi tin nhắn cho chúng tôi</h3>
+          <form id="contactForm" onsubmit="return handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Họ và tên *</label>
+              <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại</label>
+              <input type="tel" id="phone" name="phone" placeholder="0901 234 567">
+            </div>
+            <div class="form-group">
+              <label for="subject">Chủ đề</label>
+              <select id="subject" name="subject">
+                <option value="order">Đặt hàng / Tư vấn sản phẩm</option>
+                <option value="custom">Custom Recipe / Gift Set</option>
+                <option value="workshop">Workshop</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Nội dung *</label>
+              <textarea id="message" name="message" required placeholder="Bạn muốn hỏi gì về Otter Treats?"></textarea>
+            </div>
+            <button type="submit" class="btn" style="width:100%;">Gửi tin nhắn</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4241847856!2d106.6983!3d10.7769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38a3c5c5c5%3A0x5c5c5c5c5c5c5c5c!2zMTIzIE5ndXnhu4VuIEh14buHLCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Bản đồ Otter Treats">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Otter Treats</h4>
+          <p>Craft Chocolate & Sweets handmade.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Liên kết</h4>
+          <a href="index.html">Trang chủ</a><br>
+          <a href="about.html">Về chúng tôi</a><br>
+          <a href="products.html">Sản phẩm</a><br>
+          <a href="services.html">Dịch vụ</a>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <a href="contact.html">Liên hệ</a>
+        </div>
+        <div>
+          <h4>Liên hệ</h4>
+          <p>📍 TP. Hồ Chí Minh<br>📧 hello@ottertreats.vn<br>📞 0901 234 567</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Otter Treats. All rights reserved. | Assignment FPT Polytechnic
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('nav').classList.toggle('active');
+    });
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Cảm ơn bạn đã gửi tin nhắn! Đội ngũ Otter Treats sẽ phản hồi sớm nhất có thể. 🦦❤️');
+      document.getElementById('contactForm').reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
